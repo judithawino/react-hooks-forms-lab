@@ -13,7 +13,7 @@ function ItemForm({ onItemFormSubmit }) {
         [event.target.name]: event.target.value,
       });
     }
-  
+  // onItemFormSubmit=handleSubmit;
     function handleSubmit(event) {
       event.preventDefault();
       onItemFormSubmit({
@@ -47,7 +47,7 @@ function ItemForm({ onItemFormSubmit }) {
           </select>
         </label>
   
-        <button type="submit" onSubmit={handleSubmit}>Add to List</button>
+        <button type="submit" onSubmit={onItemFormSubmit}>Add to List</button>
       </form>
     );
   }
